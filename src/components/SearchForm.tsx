@@ -162,7 +162,7 @@ const SearchForm = () => {
       </div>
 
       {/* Submit */}
-      <Button className="mt-6 h-12 w-full text-base font-semibold glow-blue-strong">
+      <Button onClick={handleSearch} className="mt-6 h-12 w-full text-base font-semibold glow-blue-strong">
         <Search className="mr-2 h-4 w-4" />
         Search All Providers
       </Button>
