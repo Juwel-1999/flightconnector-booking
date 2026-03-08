@@ -11,6 +11,7 @@ import Architecture from "./pages/Architecture";
 import About from "./pages/About";
 import Passengers from "./pages/Passengers";
 import SeatSelection from "./pages/SeatSelection";
+import Itinerary from "./pages/Itinerary";
 import NotFound from "./pages/NotFound";
 import OpenToWorkBadge from "./components/OpenToWorkBadge";
 
@@ -35,6 +36,7 @@ const AnimatedRoutes = () => {
           <Route path="/about" element={<About />} />
           <Route path="/passengers" element={<Passengers />} />
           <Route path="/seats" element={<SeatSelection />} />
+          <Route path="/itinerary" element={<Itinerary />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </motion.div>
