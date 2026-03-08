@@ -304,7 +304,7 @@ const Passengers = () => {
             <p className="text-xs text-muted-foreground">Total</p>
             <p className="text-2xl font-bold text-success">€{total}</p>
           </div>
-          <Button size="lg" className="glow-blue-strong">
+          <Button size="lg" className="glow-blue-strong" onClick={() => navigate("/seats")}>
             Continue to Seat Selection
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
