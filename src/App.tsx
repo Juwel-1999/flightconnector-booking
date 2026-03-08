@@ -9,6 +9,7 @@ import Results from "./pages/Results";
 import ConnectorDeepDive from "./pages/ConnectorDeepDive";
 import Architecture from "./pages/Architecture";
 import About from "./pages/About";
+import Passengers from "./pages/Passengers";
 import NotFound from "./pages/NotFound";
 import OpenToWorkBadge from "./components/OpenToWorkBadge";
 
@@ -31,6 +32,7 @@ const AnimatedRoutes = () => {
           <Route path="/connector" element={<ConnectorDeepDive />} />
           <Route path="/architecture" element={<Architecture />} />
           <Route path="/about" element={<About />} />
+          <Route path="/passengers" element={<Passengers />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </motion.div>

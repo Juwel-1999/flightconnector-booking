@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { ChevronDown, ChevronUp, Plane } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -33,6 +34,7 @@ interface FlightCardProps {
 
 const FlightCard = ({ flight }: FlightCardProps) => {
   const [expanded, setExpanded] = useState(false);
+  const navigate = useNavigate();
   const provider = providerConfig[flight.provider];
 
   const stopsLabel =
@@ -120,7 +122,7 @@ const FlightCard = ({ flight }: FlightCardProps) => {
             <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10">
               View Details
             </Button>
-            <Button size="sm">Book Now</Button>
+            <Button size="sm" onClick={() => navigate("/passengers")}>Book Now</Button>
           </div>
         </div>
       </div>
