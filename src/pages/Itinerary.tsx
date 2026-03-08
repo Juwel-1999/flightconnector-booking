@@ -275,7 +275,7 @@ const Itinerary = () => {
           <p className="mt-2 text-xs text-muted-foreground">
             A confirmation has been sent to john@example.com
           </p>
-          <Button className="mt-4 w-full" onClick={() => { setShowSuccess(false); navigate("/"); }}>
+          <Button className="mt-4 w-full" onClick={() => { setShowSuccess(false); navigate("/confirmation"); }}>
             View Booking Summary
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
