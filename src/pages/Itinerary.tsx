@@ -38,33 +38,7 @@ const Itinerary = () => {
       <Header />
 
       <main className="container max-w-4xl pt-24 pb-20">
-        {/* Progress bar */}
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="mb-8 flex items-center justify-center gap-2"
-        >
-          {steps.map((step, i) => (
-            <div key={step} className="flex items-center gap-2">
-              <div className="flex items-center gap-2">
-                <div className={cn(
-                  "flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold",
-                  i === 3 ? "bg-primary text-primary-foreground"
-                    : "bg-success/20 text-success"
-                )}>
-                  {i < 3 ? "✓" : i + 1}
-                </div>
-                <span className={cn(
-                  "hidden text-sm font-medium sm:inline",
-                  i === 3 ? "text-foreground" : "text-muted-foreground"
-                )}>
-                  {step}
-                </span>
-              </div>
-              {i < steps.length - 1 && <div className="h-px w-6 bg-border sm:w-10" />}
-            </div>
-          ))}
-        </motion.div>
+        <BookingProgress activeStep={4} />
 
         <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="mb-8 text-center">
           <h1 className="text-2xl font-bold text-foreground md:text-3xl">Review Your Booking</h1>

@@ -72,33 +72,7 @@ const SeatSelection = () => {
 
       <main className="container max-w-5xl pt-24 pb-10">
         {/* Progress bar */}
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="mb-8 flex items-center justify-center gap-2"
-        >
-          {steps.map((step, i) => (
-            <div key={step} className="flex items-center gap-2">
-              <div className="flex items-center gap-2">
-                <div className={cn(
-                  "flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold",
-                  i === 2 ? "bg-primary text-primary-foreground"
-                    : i < 2 ? "bg-success/20 text-success"
-                    : "bg-accent text-muted-foreground"
-                )}>
-                  {i + 1}
-                </div>
-                <span className={cn(
-                  "hidden text-sm font-medium sm:inline",
-                  i === 2 ? "text-foreground" : "text-muted-foreground"
-                )}>
-                  {step}
-                </span>
-              </div>
-              {i < steps.length - 1 && <div className="h-px w-6 bg-border sm:w-10" />}
-            </div>
-          ))}
-        </motion.div>
+        <BookingProgress activeStep={3} />
 
         {/* Flight Summary */}
         <motion.div
