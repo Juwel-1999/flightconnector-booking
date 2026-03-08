@@ -32,6 +32,7 @@ const AnimatedRoutes = () => {
           <Route path="/connector" element={<ConnectorDeepDive />} />
           <Route path="/architecture" element={<Architecture />} />
           <Route path="/about" element={<About />} />
+          <Route path="/passengers" element={<Passengers />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </motion.div>

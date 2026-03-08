@@ -122,8 +122,7 @@ const FlightCard = ({ flight }: FlightCardProps) => {
             <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10">
               View Details
             </Button>
-            <Button size="sm">Book Now</Button>
-          </div>
+            <Button size="sm" onClick={() => navigate("/passengers")}>Book Now</Button>
         </div>
       </div>
 
