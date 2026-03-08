@@ -9,7 +9,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 
-const steps = ["Search", "Select Flight", "Passengers", "Confirm"];
 const columns = ["A", "B", "C", "", "D", "E", "F"];
 const TOTAL_ROWS = 28;
 
