@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { format } from "date-fns";
 import { CalendarIcon, User, Plane, ArrowRight, ChevronLeft, Luggage, UtensilsCrossed } from "lucide-react";
 import Header from "@/components/Header";
+import BookingProgress from "@/components/BookingProgress";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -14,7 +15,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { cn } from "@/lib/utils";
 
-const steps = ["Search", "Select Flight", "Passengers", "Confirm"];
+
 
 const baggageOptions = [
   { id: "none", label: "No Extra", desc: "Included 23kg", price: 0 },
@@ -37,42 +38,7 @@ const Passengers = () => {
       <Header />
 
       <main className="container max-w-4xl pt-24 pb-10">
-        {/* Progress bar */}
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="mb-8 flex items-center justify-center gap-2"
-        >
-          {steps.map((step, i) => (
-            <div key={step} className="flex items-center gap-2">
-              <div className="flex items-center gap-2">
-                <div
-                  className={cn(
-                    "flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold",
-                    i === 2
-                      ? "bg-primary text-primary-foreground"
-                      : i < 2
-                      ? "bg-success/20 text-success"
-                      : "bg-accent text-muted-foreground"
-                  )}
-                >
-                  {i + 1}
-                </div>
-                <span
-                  className={cn(
-                    "hidden text-sm font-medium sm:inline",
-                    i === 2 ? "text-foreground" : "text-muted-foreground"
-                  )}
-                >
-                  {step}
-                </span>
-              </div>
-              {i < steps.length - 1 && (
-                <div className="h-px w-6 bg-border sm:w-10" />
-              )}
-            </div>
-          ))}
-        </motion.div>
+        <BookingProgress activeStep={2} />
 
         {/* Flight Summary Card */}
         <motion.div
