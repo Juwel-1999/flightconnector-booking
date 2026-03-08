@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { format } from "date-fns";
 import { CalendarIcon, User, Plane, ArrowRight, ChevronLeft, Luggage, UtensilsCrossed } from "lucide-react";
 import Header from "@/components/Header";
+import BookingProgress from "@/components/BookingProgress";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
