@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Results from "./pages/Results";
 import ConnectorDeepDive from "./pages/ConnectorDeepDive";
 import Architecture from "./pages/Architecture";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
