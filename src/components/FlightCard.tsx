@@ -34,6 +34,7 @@ interface FlightCardProps {
 
 const FlightCard = ({ flight }: FlightCardProps) => {
   const [expanded, setExpanded] = useState(false);
+  const navigate = useNavigate();
   const provider = providerConfig[flight.provider];
 
   const stopsLabel =
