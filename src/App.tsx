@@ -9,6 +9,7 @@ import Results from "./pages/Results";
 import ConnectorDeepDive from "./pages/ConnectorDeepDive";
 import Architecture from "./pages/Architecture";
 import About from "./pages/About";
+import Passengers from "./pages/Passengers";
 import NotFound from "./pages/NotFound";
 import OpenToWorkBadge from "./components/OpenToWorkBadge";
 
