@@ -15,7 +15,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { cn } from "@/lib/utils";
 
-const steps = ["Search", "Select Flight", "Passengers", "Confirm"];
+
 
 const baggageOptions = [
   { id: "none", label: "No Extra", desc: "Included 23kg", price: 0 },
