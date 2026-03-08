@@ -284,7 +284,7 @@ const SeatSelection = () => {
             </p>
             <p className="text-2xl font-bold text-success">€{total}</p>
           </div>
-          <Button size="lg" className="glow-blue-strong">
+          <Button size="lg" className="glow-blue-strong" onClick={() => navigate("/itinerary")}>
             Continue to Review
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
