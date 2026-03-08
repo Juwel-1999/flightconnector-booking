@@ -13,11 +13,10 @@ const Header = () => {
         </div>
 
         <nav className="hidden items-center gap-6 md:flex">
-          {["Search", "Results", "Architecture", "About"].map((link) => (
-            <NavLink key={link} to={link === "Search" ? "/" : `/${link.toLowerCase()}`}>
-              {link}
-            </NavLink>
-          ))}
+          <NavLink to="/">Search</NavLink>
+          <NavLink to="/results">Results</NavLink>
+          <NavLink to="/connector">Connector</NavLink>
+          <NavLink to="/about">About</NavLink>
         </nav>
 
         <div className="flex items-center gap-2">
