@@ -10,10 +10,15 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { Label } from "@/components/ui/label";
 
 const SearchForm = () => {
+  const navigate = useNavigate();
   const [tripType, setTripType] = useState<"oneway" | "roundtrip">("roundtrip");
   const [departureDate, setDepartureDate] = useState<Date>();
   const [returnDate, setReturnDate] = useState<Date>();
   const [passengers, setPassengers] = useState(1);
+
+  const handleSearch = () => {
+    navigate("/results");
+  };
 
   return (
     <div className="mx-auto w-full max-w-3xl rounded-xl border border-border bg-card p-6 glow-blue sm:p-8">
