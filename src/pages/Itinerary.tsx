@@ -16,7 +16,7 @@ import {
   Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription
 } from "@/components/ui/dialog";
 
-const steps = ["Search", "Select Flight", "Passengers", "Confirm"];
+
 
 const bookingSteps = [
   "Request sent to Sabre GDS connector service",
