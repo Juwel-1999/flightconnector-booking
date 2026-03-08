@@ -34,6 +34,7 @@ const AnimatedRoutes = () => {
           <Route path="/architecture" element={<Architecture />} />
           <Route path="/about" element={<About />} />
           <Route path="/passengers" element={<Passengers />} />
+          <Route path="/seats" element={<SeatSelection />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </motion.div>
