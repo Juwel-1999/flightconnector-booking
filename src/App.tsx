@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Passengers from "./pages/Passengers";
 import SeatSelection from "./pages/SeatSelection";
 import Itinerary from "./pages/Itinerary";
+import Confirmation from "./pages/Confirmation";
 import NotFound from "./pages/NotFound";
 import OpenToWorkBadge from "./components/OpenToWorkBadge";
 
