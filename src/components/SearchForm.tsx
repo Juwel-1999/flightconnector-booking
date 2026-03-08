@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { format } from "date-fns";
 import { CalendarIcon, Minus, Plus, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -9,10 +10,15 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { Label } from "@/components/ui/label";
 
 const SearchForm = () => {
+  const navigate = useNavigate();
   const [tripType, setTripType] = useState<"oneway" | "roundtrip">("roundtrip");
   const [departureDate, setDepartureDate] = useState<Date>();
   const [returnDate, setReturnDate] = useState<Date>();
   const [passengers, setPassengers] = useState(1);
+
+  const handleSearch = () => {
+    navigate("/results");
+  };
 
   return (
     <div className="mx-auto w-full max-w-3xl rounded-xl border border-border bg-card p-6 glow-blue sm:p-8">
@@ -156,7 +162,7 @@ const SearchForm = () => {
       </div>
 
       {/* Submit */}
-      <Button className="mt-6 h-12 w-full text-base font-semibold glow-blue-strong">
+      <Button onClick={handleSearch} className="mt-6 h-12 w-full text-base font-semibold glow-blue-strong">
         <Search className="mr-2 h-4 w-4" />
         Search All Providers
       </Button>
