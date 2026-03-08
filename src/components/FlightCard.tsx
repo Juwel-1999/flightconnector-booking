@@ -123,6 +123,7 @@ const FlightCard = ({ flight }: FlightCardProps) => {
               View Details
             </Button>
             <Button size="sm" onClick={() => navigate("/passengers")}>Book Now</Button>
+          </div>
         </div>
       </div>
 
