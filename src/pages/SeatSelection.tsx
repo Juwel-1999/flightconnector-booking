@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ChevronLeft, ArrowRight, Info } from "lucide-react";
 import Header from "@/components/Header";
+import BookingProgress from "@/components/BookingProgress";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
